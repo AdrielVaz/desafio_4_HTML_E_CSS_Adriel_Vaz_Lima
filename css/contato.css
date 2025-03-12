@@ -1,0 +1,220 @@
+body{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+header img {
+    position: absolute;
+    left: 20px; 
+    height: 60px; 
+}
+.menu{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+.title{
+    font-size: 1.8rem;
+    color:  #1b357e;
+}
+.menu a {
+    color: rgb(25, 22, 231);
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding: 30px 15px;
+    font-style: normal;
+    transition: all 0.3s ease;
+
+}
+
+.menu a:hover {
+    background-color: #f5efef;
+    border-radius: 5px;
+    transform: scale(1.1); 
+}
+footer{
+    background-color: #1b357e;
+    width: 100%;
+    height: 70px;
+
+}
+.footer-container{
+color: #ffffff;
+font-size: 1.25rem;
+display: flex;
+padding: 20px;
+}
+.footer-container img{
+    height: 20px;
+    margin-left: 10px;
+}
+.logo{
+    position: absolute; 
+    right: 20px;
+    
+}
+
+main {
+    display: flex;               
+    align-items: center;        
+    justify-content: flex-start;     
+    gap: 20px;                  
+    margin-top: 200px;         
+}
+
+main button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 190px;
+    right: 0;
+    transition: all 0.3s ease;
+    align-self: flex-end; 
+    height: 45px;
+}
+
+main button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+}
+
+main img {
+    max-width: 70%;              
+    height: auto;
+    width: 500px;               
+}
+
+.form {
+    display: flex;
+    flex-direction: column;      
+    gap: 10px;        
+             
+}
+
+.form input{
+border-radius: 10px;
+border-color: rgb(253, 248, 248);
+height: 28px;
+width: 400px;
+padding: 8px;
+margin-top: 2px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.form select{
+    border-radius: 10px;
+    height: 45px;
+    border-color: rgb(10, 10, 10);
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+ 
+    header {
+        padding: 10px 15px; 
+    }
+
+    .menu {
+        margin-top: 150px;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 22px; 
+        padding: 0px 15px;
+    }
+  main{
+    width: 100%;
+    margin-left: 20px;
+ 
+  }
+    footer .footer-container {
+          width: 100%;
+        align-items: center;
+        font-size: 14px;
+    }
+    .logTop{
+        margin-left: 15px;
+       }
+       .form{
+        margin-top: 50px;
+        margin-left: 50px;
+       } .form select {
+        width: 100%; 
+        margin-left: 9px; /* Garantir que os campos ocupem 100% da largura disponível */
+    }
+       .form input {
+        width: 100%;  /* Para garantir que o input ocupe 100% da largura disponível */
+        max-width: 100%;  /* Garantir que o input não ultrapasse o contêiner */
+      
+    }
+    
+   button{
+    margin: 0px 20px 20px ;
+    
+    
+   }
+
+    .footer-container {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;  /* Reduzir o tamanho da fonte para se ajustar melhor em telas pequenas */
+    }
+    main img{
+     display: none;
+        
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+       
+        
+    }
+    main img {
+        max-width: 70%;              
+        height: auto;
+        width: 300px;               
+    }
+    .menu {
+        justify-content: space-around; 
+        margin-top: 100px;
+    }
+main{
+    margin-right: 20px;
+   
+}
+.logTop{
+    margin-left: 20px;
+   }
+
+}
