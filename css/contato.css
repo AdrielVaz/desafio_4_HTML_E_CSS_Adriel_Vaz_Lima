@@ -141,18 +141,28 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
  
     header {
+      
         padding: 10px 15px; 
     }
-
+    header img{
+     left: 0px;
+     width:50px ;
+     height: auto;
+     margin-top: 30px;
+     margin-right: 2px;
+    }
     .menu {
-        margin-top: 150px;
-        gap: 10px;
+        display: flex;
+        justify-content: center; 
+        gap: 2px;
     }
 
     .menu a {
-        font-size: 22px; 
-        padding: 0px 15px;
+        font-size: 14px; 
+ 
+     
     }
+
   main{
     width: 100%;
     margin-left: 20px;
@@ -171,11 +181,11 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         margin-left: 50px;
        } .form select {
         width: 100%; 
-        margin-left: 9px; /* Garantir que os campos ocupem 100% da largura disponível */
+        margin-left: 9px; 
     }
        .form input {
-        width: 100%;  /* Para garantir que o input ocupe 100% da largura disponível */
-        max-width: 100%;  /* Garantir que o input não ultrapasse o contêiner */
+        width: 100%; 
+        max-width: 100%;  
       
     }
     
@@ -188,7 +198,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     .footer-container {
         width: 100%;
         padding: 10px;
-        font-size: 14px;  /* Reduzir o tamanho da fonte para se ajustar melhor em telas pequenas */
+        font-size: 14px;  
     }
     main img{
      display: none;
@@ -209,9 +219,21 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         height: auto;
         width: 300px;               
     }
+    header {
+        padding: 45px 30px;
+        
+    }
+    header img{
+        left: 0px;
+        width:90px ;
+        height: auto;
+        margin-top: 30px;
+       }
     .menu {
-        justify-content: space-around; 
-        margin-top: 100px;
+        
+        display: flex;
+        justify-content: center; 
+        gap: 9px;
     }
 main{
     margin-right: 20px;
