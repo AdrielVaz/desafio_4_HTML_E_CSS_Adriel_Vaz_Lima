@@ -63,12 +63,13 @@ footer{
     height: 70px;
 
 }
-.footer-container{
-color: #ffffff;
-font-size: 20px;
-font-family: "Roboto Mono", monospace;
-display: flex;
-padding: 20px;
+.footer-container {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    padding: 20px;
+    align-items: center; 
 }
 .footer-container img{
     height: 20px;
@@ -80,6 +81,11 @@ padding: 20px;
     
 }
 
+
+.footer-container img {
+    height: 24px;    
+    transition: all 0.3s ease; 
+}
 
 @media   ( max-width: 600px) {
     body {
@@ -156,3 +162,22 @@ padding: 20px;
 }
 
 
+.footer-container a[href*="facebook"]:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(200deg);
+}
+
+
+.footer-container a[href*="youtube"]:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(0deg);
+}
+
+
+.footer-container a[href*="instagram"]:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(300deg);
+}
+.footer-container a:hover {
+    transform: translateY(-3px);
+}
